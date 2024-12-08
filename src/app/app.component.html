@@ -1,0 +1,15 @@
+<!-- Spinner Start -->
+<div id="spinner" *ngIf="isLoading" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+   <div class="spinner"></div>
+</div>
+<!-- Spinner End -->
+
+<!-- <div id="preloader" *ngIf="isLoading"></div> -->
+
+<app-top-bar></app-top-bar>
+<app-header></app-header>
+<router-outlet>
+   <!-- Back to Top -->
+   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+</router-outlet>
+<app-footer></app-footer>
