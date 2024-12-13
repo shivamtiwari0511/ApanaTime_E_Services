@@ -1,38 +1,59 @@
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+        <!-- <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>ApanaTime</h1>
+        </a> -->
+
+        <!-- <a href="index.html" class="logo d-flex align-items-center navbar-brand p-0">
+            <img src="assets/img/apanatime logo (13).png" alt="" style="margin-left: 0px; height: 56px;">
+            <h1 class="m-1" style="width: 20px;">ApanaTime</h1>
+        </a> -->
+        <a href="index.html" class="logo d-flex align-items-center navbar-brand p-0">
+            <img src="assets/img/apanatime logo (13).png" alt="" style="margin-left: 0px; height: 56px;">
+            <h1 class="m-1" style="width: 20px;">
+                <span class="apana">Apana</span>
+                <span class="time">Time</span>
+            </h1>
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <div class="nav-item dropdown">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a routerLink="_aboutUs" routerLinkActive="router-link-active" class="nav-item nav-link">About</a>
+                <a routerLink="_services" routerLinkActive="router-link-active" class="nav-item nav-link">Services</a>
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                     <div class="dropdown-menu m-0">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                        <a routerLink="_blog/blogs" routerLinkActive="router-link-active" class="dropdown-item">Blog Grid</a>
+                        <a routerLink="_blog/blogDetails" routerLinkActive="router-link-active" class="dropdown-item">Blog Detail</a>
                     </div>
-                </div>
-                <div class="nav-item dropdown">
+                </div> -->
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="feature.html" class="dropdown-item">Our features</a>
-                        <a href="team.html" class="dropdown-item">Team Members</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        <a routerLink="_moreAbout/pricePlans" routerLinkActive="router-link-active" class="dropdown-item">Pricing Plan</a>
+                        <a routerLink="_moreAbout/features" routerLinkActive="router-link-active" class="dropdown-item">Our features</a>
+                        <a routerLink="_moreAbout/team" routerLinkActive="router-link-active" class="dropdown-item">Team Members</a>
+                        <a routerLink="_moreAbout/testimonials" routerLinkActive="router-link-active" class="dropdown-item">Testimonial</a>
+                        <a routerLink="_moreAbout/quote" routerLinkActive="router-link-active" class="dropdown-item">Free Quote</a>
                     </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div> -->
+                <a routerLink="_contactUs" routerLinkActive="router-link-active" class="nav-item nav-link">Contact</a>
             </div>
-            <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i
-                    class="fa fa-search"></i></button>
-            <a href="" class="btn btn-primary py-2 px-4 ms-3">Download</a>
+            <!-- <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                    class="fa fa-search"></i></button> -->
+            <a [href]="whatsappLink" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary d-flex align-items-center py-1 px-2 ms-3"><img src="assets/img/whatsapp.png" alt="WhatsApp"
+                    style="margin-left: 0px; padding-right: 5px; height: 30px;">WhatsApp</a>
+            <!-- <a href="" class="ms-3">
+                <img src="assets/img/whatsapp.png" alt="" style="margin-left: 0px; height: 30px;">
+            </a> -->
+            <!-- <a [href]="whatsappLink" target="_blank" rel="noopener noreferrer" class="ms-3">
+                <img src="assets/img/whatsapp.png" alt="WhatsApp" style="margin-left: 0px; height: 30px;">
+            </a> -->
         </div>
     </nav>
 </div>

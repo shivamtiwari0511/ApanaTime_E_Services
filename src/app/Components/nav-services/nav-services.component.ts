@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { ServicesComponent } from "../home/services/services.component";
 
 @Component({
   selector: 'app-nav-services',
-  imports: [],
+  imports: [ServicesComponent],
   templateUrl: './nav-services.component.html',
   styleUrl: './nav-services.component.css'
 })

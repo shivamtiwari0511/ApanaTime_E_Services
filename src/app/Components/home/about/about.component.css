@@ -1,0 +1,8 @@
+.bg-primary {
+    background-color: #ffa100 !important;
+}
+.btn-primary {
+    /* color: #000; */
+    background-color: #ffa100;
+    border-color: #ffa100;
+}
