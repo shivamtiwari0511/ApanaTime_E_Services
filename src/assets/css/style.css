@@ -1,6 +1,12 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
+    /* --primary: #06A3DA;
+    --secondary: #34AD54;
+    --light: #EEF9FF;
+    --dark: #091E3E; */
+
+    --primary: #EEF9FF;
+    /* --primary: #ffa100; */
     --secondary: #34AD54;
     --light: #EEF9FF;
     --dark: #091E3E;
@@ -58,8 +64,11 @@
 } */
 
 :root {
-    --background-color: #ffffff; /* Background color for the spinner */
-    --accent-color: #007bff;     /* Accent color for the loader animation */
+    /* Background color for the spinner */
+    --background-color: #ffffff;
+    /* Accent color for the loader animation */ 
+    /* --accent-color: #007bff;      */
+    --accent-color: #ffa100;     
   }
   
   #spinner {
@@ -203,7 +212,9 @@ h6,
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--primary);
+    /* color: var(--primary); */
+    color: #ffa100;
+
 }
 
 .navbar-dark .navbar-brand h1 {
@@ -211,8 +222,10 @@ h6,
 }
 
 .navbar-dark .navbar-toggler {
-    color: var(--primary) !important;
-    border-color: var(--primary) !important;
+    /* color: var(--primary) !important; */
+    color: #ffa100 !important;
+    /* border-color: var(--primary) !important; */
+    border-color: #ffa100 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -229,7 +242,8 @@ h6,
     }
 
     .navbar-dark .navbar-brand h1 {
-        color: var(--primary);
+        /* color: var(--primary); */
+        color: #ffa100;
     }
 }
 
@@ -255,7 +269,8 @@ h6,
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--primary);
+        /* background: var(--primary); */
+        background: #ffa100;
         transition: .5s;
     }
 
@@ -269,8 +284,13 @@ h6,
         display: none;
     }
 
-    .sticky-top.navbar-dark .navbar-brand h1 {
-        color: var(--primary);
+    .sticky-top.navbar-dark .navbar-brand h1 .apana{
+        /* color: var(--primary); */
+        color: #ffa100;
+    }
+    .sticky-top.navbar-dark .navbar-brand h1 .time{
+        /* color: var(--primary); */
+        color: black;
     }
 }
 
@@ -282,6 +302,7 @@ h6,
     right: 0;
     bottom: 0;
     background: rgba(9, 30, 62, .7);
+    /* background: rgba(255, 161, 0, 1); */
     z-index: 1;
 }
 
@@ -317,7 +338,8 @@ h6,
     height: 5px;
     left: 0;
     bottom: 0;
-    background: var(--primary);
+    /* background: var(--primary); */
+    background: #ffa100;
     border-radius: 2px;
 }
 
@@ -385,7 +407,8 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary);
+    /* background: var(--primary); */
+    background: #ffa100;
     border-radius: 2px;
     transform: rotate(-45deg);
 }
@@ -423,7 +446,8 @@ h6,
     margin: 0 5px;
     width: 15px;
     height: 15px;
-    background: #DDDDDD;
+    /* background: #DDDDDD; */
+    background: #ffa100;
     border-radius: 2px;
     transition: .5s;
 }
@@ -550,3 +574,31 @@ h6,
         margin-bottom: -75px;
     }
 }
+
+
+/* my CSS */
+.text-primary {
+    color: #ffa100 !important;
+}
+.bg-primary {
+    background-color: #ffa100 !important;
+}
+
+.btn-primary:hover {
+    color: #000;
+    /* background-color: #2bb1e0; */
+    background-color: #ffa100;
+    /* border-color: #1facde; */
+    border-color: #ffa100;
+}
+
+.btn-primary {
+    color: #000;
+    /* background-color: #06A3DA; */
+    background-color: #ffa100;
+    /* border-color: #06A3DA; */
+    border-color: #ffa100;
+    color: #FFFFFF;
+}
+
+/* End */
