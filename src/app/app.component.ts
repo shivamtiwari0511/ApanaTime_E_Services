@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router, RouterOutlet } from '@angular/router';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HeaderComponent } from './Components/header/header.component';
@@ -66,5 +66,23 @@ export class AppComponent implements OnInit, AfterViewInit {
         items: 1
       });
     }, 100);  // Delay in milliseconds to make sure DOM is ready
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    const scrollTopButton = document.querySelector('.back-to-top') as HTMLElement;
+    if (window.scrollY > 300) {
+      scrollTopButton.classList.add('show');
+    } else {
+      scrollTopButton.classList.remove('show');
+    }
+  }
+
+  scrollToTop(event: Event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   }
 }
