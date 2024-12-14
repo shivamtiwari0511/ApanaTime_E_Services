@@ -3,3 +3,9 @@
     background-color: #ffa100;
     border-color: #ffa100;
 }
+
+.router-link-active {
+    /* font-weight: bold; */
+    color: #ffa100 !important; /* Bootstrap Primary color */
+    /* text-decoration: underline; */
+}
