@@ -7,7 +7,7 @@ import { FaqComponent } from "./faq/faq.component";
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, FactsComponent, FeaturesComponent, ServicesComponent, FaqComponent,],
+  imports: [HeroComponent, FactsComponent, FeaturesComponent, ServicesComponent, FaqComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
