@@ -286,11 +286,13 @@ h6,
 
     .sticky-top.navbar-dark .navbar-brand h1 .apana{
         /* color: var(--primary); */
-        color: #ffa100;
+        /* color: #ffa100; */
+        color: black;
     }
     .sticky-top.navbar-dark .navbar-brand h1 .time{
         /* color: var(--primary); */
-        color: black;
+        /* color: black; */
+        color: #ffa100;
     }
 }
 
