@@ -241,9 +241,14 @@ h6,
         color: var(--dark);
     }
 
-    .navbar-dark .navbar-brand h1 {
+    .navbar-dark .navbar-brand h1 .time{
         /* color: var(--primary); */
         color: #ffa100;
+    }
+
+    .navbar-dark .navbar-brand h1 .apana{
+        /* color: var(--primary); */
+        color: #000;;
     }
 }
 
