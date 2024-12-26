@@ -453,15 +453,17 @@ h6,
     margin: 0 5px;
     width: 15px;
     height: 15px;
-    /* background: #DDDDDD; */
-    background: #ffa100;
+    background: #DDDDDD;
+    /* background: #ffa100 !important; */
     border-radius: 2px;
     transition: .5s;
 }
 
 .testimonial-carousel .owl-dot.active {
     width: 30px;
-    background: var(--primary);
+    /* background: var(--primary); */
+    background: var(--accent-color);
+    /* background: #ffa100; */
 }
 
 .testimonial-carousel .owl-item.center {
@@ -478,6 +480,9 @@ h6,
     box-shadow: 0 0 30px #DDDDDD;
 }
 
+.testimonial-carousel .owl-nav{
+    display: none;
+}
 
 /*** Team ***/
 .team-item {
@@ -595,17 +600,17 @@ h6,
 .btn-primary:hover {
     color: #000;
     /* background-color: #2bb1e0; */
-    background-color: #ffa100;
+    background-color: #ffa100 !important;
     /* border-color: #1facde; */
-    border-color: #ffa100;
+    border-color: #ffa100 !important;
 }
 
 .btn-primary {
     color: #000;
     /* background-color: #06A3DA; */
-    background-color: #ffa100;
+    background-color: #ffa100 !important;
     /* border-color: #06A3DA; */
-    border-color: #ffa100;
+    border-color: #ffa100 !important;
     color: #FFFFFF;
 }
 
