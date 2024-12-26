@@ -1,0 +1,15 @@
+.testimonial-carousel .testimonial-item a i {
+    font-size: 18px;
+    margin-left: 12px;
+    line-height: 0;
+    transition: 0.3s !important;
+}
+
+/* .owl-item .active{
+    opacity: 0.3 !important;
+} */
+
+.owl-item {
+    transition: opacity 0.1s ease-in-out;
+  }
+  
