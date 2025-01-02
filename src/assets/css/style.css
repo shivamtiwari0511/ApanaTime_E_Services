@@ -1,4 +1,11 @@
 /********** Template CSS **********/
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
 :root {
     /* --primary: #06A3DA;
     --secondary: #34AD54;
